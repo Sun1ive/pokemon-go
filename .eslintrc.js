@@ -1,15 +1,12 @@
 module.exports = {
   root: true,
   env: {
-    node: true
+    node: true,
   },
-  'extends': [
-    'plugin:vue/essential',
-    '@vue/airbnb',
-    '@vue/typescript'
-  ],
+  extends: ['plugin:vue/essential', '@vue/airbnb', '@vue/typescript'],
   rules: {
+    'import/no-extraneous-dependencies': 0,
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
-  }
-}
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+  },
+};
