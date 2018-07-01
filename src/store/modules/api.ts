@@ -29,6 +29,8 @@ const actions = {
     }
   },
 };
-const getters = {};
+const getters = {
+  getPokemonList: (state: State): T.PokemonList[] => state.pokemonList,
+};
 
 export default { state, mutations, actions, getters };
