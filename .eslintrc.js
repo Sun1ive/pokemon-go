@@ -5,6 +5,7 @@ module.exports = {
   },
   extends: ['plugin:vue/essential', '@vue/airbnb', '@vue/typescript'],
   rules: {
+    camelcase: 0,
     'import/no-extraneous-dependencies': 0,
     'linebreak-style': 0,
     'import/extensions': 0,
